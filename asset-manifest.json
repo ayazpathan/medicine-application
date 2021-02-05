@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/medicine-application/static/css/main.8f7722ca.chunk.css",
-    "main.js": "/medicine-application/static/js/main.9baca2fd.chunk.js",
-    "main.js.map": "/medicine-application/static/js/main.9baca2fd.chunk.js.map",
-    "runtime-main.js": "/medicine-application/static/js/runtime-main.aac566b4.js",
-    "runtime-main.js.map": "/medicine-application/static/js/runtime-main.aac566b4.js.map",
-    "static/css/2.150d169a.chunk.css": "/medicine-application/static/css/2.150d169a.chunk.css",
-    "static/js/2.d43ae88b.chunk.js": "/medicine-application/static/js/2.d43ae88b.chunk.js",
-    "static/js/2.d43ae88b.chunk.js.map": "/medicine-application/static/js/2.d43ae88b.chunk.js.map",
+    "main.css": "/medicine-application/static/css/main.03333e94.chunk.css",
+    "main.js": "/medicine-application/static/js/main.39afe7c6.chunk.js",
+    "main.js.map": "/medicine-application/static/js/main.39afe7c6.chunk.js.map",
+    "runtime-main.js": "/medicine-application/static/js/runtime-main.840aacc6.js",
+    "runtime-main.js.map": "/medicine-application/static/js/runtime-main.840aacc6.js.map",
+    "static/css/2.ff645aaf.chunk.css": "/medicine-application/static/css/2.ff645aaf.chunk.css",
+    "static/js/2.425bb70b.chunk.js": "/medicine-application/static/js/2.425bb70b.chunk.js",
+    "static/js/2.425bb70b.chunk.js.map": "/medicine-application/static/js/2.425bb70b.chunk.js.map",
     "index.html": "/medicine-application/index.html",
-    "static/css/2.150d169a.chunk.css.map": "/medicine-application/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.8f7722ca.chunk.css.map": "/medicine-application/static/css/main.8f7722ca.chunk.css.map",
-    "static/js/2.d43ae88b.chunk.js.LICENSE.txt": "/medicine-application/static/js/2.d43ae88b.chunk.js.LICENSE.txt"
+    "precache-manifest.582eeddc1275a165116090d0da2b3a92.js": "/medicine-application/precache-manifest.582eeddc1275a165116090d0da2b3a92.js",
+    "service-worker.js": "/medicine-application/service-worker.js",
+    "static/css/2.ff645aaf.chunk.css.map": "/medicine-application/static/css/2.ff645aaf.chunk.css.map",
+    "static/css/main.03333e94.chunk.css.map": "/medicine-application/static/css/main.03333e94.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.aac566b4.js",
-    "static/css/2.150d169a.chunk.css",
-    "static/js/2.d43ae88b.chunk.js",
-    "static/css/main.8f7722ca.chunk.css",
-    "static/js/main.9baca2fd.chunk.js"
+    "static/js/runtime-main.840aacc6.js",
+    "static/css/2.ff645aaf.chunk.css",
+    "static/js/2.425bb70b.chunk.js",
+    "static/css/main.03333e94.chunk.css",
+    "static/js/main.39afe7c6.chunk.js"
   ]
 }
