@@ -11,7 +11,7 @@ const RemoveItemWarning = ({ closeModel, confirmDelete, itemName }) => {
         Are you sure you want to delete <b>{itemName}</b>?
       </h6>
       <br />
-      <div className="button-container">
+      <div className="btn-container">
         <Button variant="secondary" onClick={closeModel}>
           No
         </Button>

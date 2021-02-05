@@ -7,6 +7,7 @@ import MedicineList from "../../components/medicine-list/medicine-list.component
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { addItem, updateItem } from "../../redux/medicine/medicine.actions";
+import "./home.css";
 
 const Home = ({ addItem, updateItem }) => {
   const [isModelOpen, setIsModelOpen] = useState(false);
@@ -51,15 +52,17 @@ const Home = ({ addItem, updateItem }) => {
         </Model>
       ) : null}
       <Row className="justify-content-md-center">
-        <div style={{ marginTop: "50px" }}>
+        <div className="sub-container container-wrapper">
           <Button variant="outline-primary" onClick={addNewMedicineHandler}>
             Add Medicine
           </Button>
         </div>
       </Row>
-      <Row className="justify-content-md-center">
-        <div style={{ marginTop: "50px" }}>
-          <MedicineList onEdit={updateMedicineHandler} />
+      <Row className="justify-content-md-center container-wrapper">
+        <div className="sub-container">
+          <div className="container-wrapper">
+            <MedicineList onEdit={updateMedicineHandler} />
+          </div>
         </div>
       </Row>
     </Container>

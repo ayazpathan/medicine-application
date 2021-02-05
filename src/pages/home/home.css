@@ -1,0 +1,17 @@
+.sub-container {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 500px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  .sub-container {
+    width: 100%;
+  }
+
+  .container-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

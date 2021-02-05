@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Table, thead, tbody, tr, td, th, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { connect } from "react-redux";
 import { removeItem } from "../../redux/medicine/medicine.actions";
 import PropTypes from "prop-types";
 
 import Model from "../../components/model/model";
 import RemoveItemWarning from "../remove-item-warning/remove-item-warning";
+import "./medicine-list.css";
 
 const MedicineList = ({ medicineItems, removeItem, onEdit }) => {
   const [isModelOpen, setIsModelOpen] = useState(false);
@@ -36,26 +37,26 @@ const MedicineList = ({ medicineItems, removeItem, onEdit }) => {
   return (
     <div>
       {medicineItems.length > 0 ? (
-        <Table striped bordered hover>
+        <table role="table" cellSpacing="25" className="styled-table">
           {renderModel()}
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Medicine Name</th>
-              <th>Medicine Type</th>
-              <th>Quantity</th>
-              <th>Update Medicine</th>
-              <th>Remove Medicine</th>
+          <thead role="rowgroup">
+            <tr role="row">
+              <th role="columnheader">ID</th>
+              <th role="columnheader">Medicine Name</th>
+              <th role="columnheader">Medicine Type</th>
+              <th role="columnheader">Quantity</th>
+              <th role="columnheader">Update Medicine</th>
+              <th role="columnheader">Remove Medicine</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody role="rowgroup">
             {medicineItems.map((medicineItem) => (
-              <tr key={medicineItem.id}>
-                <td>{medicineItem.id}</td>
-                <td>{medicineItem.name}</td>
-                <td>{medicineItem.type}</td>
-                <td>{medicineItem.qty}</td>
-                <td>
+              <tr key={medicineItem.id} role="row">
+                <td role="cell">{medicineItem.id}</td>
+                <td role="cell">{medicineItem.name}</td>
+                <td role="cell">{medicineItem.type}</td>
+                <td role="cell">{medicineItem.qty}</td>
+                <td role="cell">
                   <Button
                     variant="success"
                     onClick={() => {
@@ -65,7 +66,7 @@ const MedicineList = ({ medicineItems, removeItem, onEdit }) => {
                     Edit
                   </Button>
                 </td>
-                <td>
+                <td role="cell">
                   <Button
                     variant="danger"
                     onClick={() => {
@@ -79,7 +80,7 @@ const MedicineList = ({ medicineItems, removeItem, onEdit }) => {
               </tr>
             ))}
           </tbody>
-        </Table>
+        </table>
       ) : (
         <h5>There is no medicine available at the moment!</h5>
       )}

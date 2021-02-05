@@ -1,0 +1,100 @@
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #007bff;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #007bff;
+}
+
+@media only screen and (max-width: 500px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  .styled-table {
+    min-width: 300px;
+  }
+
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block !important;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+
+  tr {
+    margin: 0 0 0rem 0 !important;
+  }
+
+  /*tr:nth-child(odd) {
+    background: #f3f3f3 !important;
+  }*/
+
+  td {
+    border: none !important;
+    border-bottom: 1px solid #eee !important;
+    position: relative !important;
+    padding-left: 50% !important;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute !important;
+    /* Top/left values mimic padding */
+    top: 12px !important;
+    left: 10px !important;
+    width: 45% !important;
+    padding-right: 10px !important;
+    white-space: nowrap !important;
+  }
+
+  td:nth-of-type(1):before {
+    content: "ID";
+  }
+  td:nth-of-type(2):before {
+    content: "Medicine Name";
+  }
+  td:nth-of-type(3):before {
+    content: "Medicine Type";
+  }
+  td:nth-of-type(4):before {
+    content: "Quantity";
+  }
+  td:nth-of-type(5):before {
+    content: "Update Medicine";
+  }
+  td:nth-of-type(6):before {
+    content: "Remove Medicine";
+  }
+}
