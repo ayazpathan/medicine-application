@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d301fe7ec7c8eef56fbdaa83f48da06d",
+    "revision": "24e249015f31e0af98fa7cfbc805fff2",
     "url": "/medicine-application/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/medicine-application/static/css/2.ff645aaf.chunk.css"
   },
   {
-    "revision": "9fb8289eadb129392a6c",
+    "revision": "5af9838fa6845a6423dc",
     "url": "/medicine-application/static/css/main.03333e94.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/medicine-application/static/js/2.425bb70b.chunk.js"
   },
   {
-    "revision": "9fb8289eadb129392a6c",
-    "url": "/medicine-application/static/js/main.39afe7c6.chunk.js"
+    "revision": "5af9838fa6845a6423dc",
+    "url": "/medicine-application/static/js/main.a275b9d8.chunk.js"
   },
   {
     "revision": "8ad0a0e17ccc6c66971e",
