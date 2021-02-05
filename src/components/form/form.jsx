@@ -52,10 +52,10 @@ const MedicineForm = ({
   return (
     <Form className="container">
       <Form.Group controlId="formName">
-        <Form.Label>Email address</Form.Label>
+        <Form.Label>Medicine Name</Form.Label>
         <Form.Control
           type="text"
-          placeholder="Enter name"
+          placeholder="Enter Medicine Name"
           value={medicineDetails.name}
           onChange={handleChange}
           name="name"
